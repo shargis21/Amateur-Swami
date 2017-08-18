@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Amateur Swami</title>
+    <title>The New Amateur Swami</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="#page-top">Amateur Swami</a>
+      <a class="navbar-brand" href="#page-top">The New Amateur Swami</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fa fa-bars"></i>
