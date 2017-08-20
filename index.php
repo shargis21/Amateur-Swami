@@ -83,7 +83,7 @@
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading"><?php the_field("offering_1") ?></h4>
             <p class="text-muted"><?php the_field("offering_1_description") ?></p>
