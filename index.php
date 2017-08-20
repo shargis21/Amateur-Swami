@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The New Amateur Swami</title>
+    <title><?php the_field("site_title") ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <a class="navbar-brand" href="#page-top">The New Amateur Swami</a>
+      <a class="navbar-brand" href="#page-top"><?php the_field("brand") ?></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fa fa-bars"></i>
@@ -40,19 +40,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#services"><?php the_field("menu_1") ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#portfolio"><?php the_field("menu_2") ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about"><?php the_field("menu_3") ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
+            <a class="nav-link" href="#team"><?php the_field("menu_4") ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact"><?php the_field("menu_5") ?></a>
           </li>
         </ul>
       </div>
@@ -91,7 +91,7 @@
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading"><?php the_field("offering_2") ?></h4>
             <p class="text-muted"><?php the_field("offering_2_description") ?></p>
@@ -99,7 +99,7 @@
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading"><?php the_field("offering_3") ?></h4>
             <p class="text-muted"><?php the_field("offering_3_description") ?></p>
@@ -215,83 +215,6 @@
             <h3 class="section-subheading text-muted"><?php the_field("section_3_subheader") ?></h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="<?php bloginfo('template_directory'); ?>/img/about/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-
-                  <img class="rounded-circle img-fluid" alt=""
-                  src="<?php
-                  $image = get_field('section_3_photo_1');
-                    echo $image ;
-                  $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                  if( $image ) {
-                    echo wp_get_attachment_image( $image, $size );
-                  } ?>">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="<?php bloginfo('template_directory'); ?>/img/about/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="<?php bloginfo('template_directory'); ?>/img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -300,29 +223,29 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading"><?php the_field("section_4_header") ?></h2>
+            <h3 class="section-subheading text-muted"><?php the_field("section_4_subheader") ?></h3>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="<?php bloginfo('template_directory'); ?>/img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
+              <h4><?php the_field("team_member_1") ?></h4>
+              <p class="text-muted"><?php the_field("title_1") ?></p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("twitter_1") ?>">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("facebook_1") ?>">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("linkedin_1") ?>">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -332,21 +255,21 @@
           <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="<?php bloginfo('template_directory'); ?>/img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
+              <h4><?php the_field("team_member_2") ?></h4>
+              <p class="text-muted"><?php the_field("title_2") ?></p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("twitter_2") ?>">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("facebook_2") ?>">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("linkedin_2") ?>">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -356,21 +279,21 @@
           <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="<?php bloginfo('template_directory'); ?>/img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
+              <h4><?php the_field("team_member_3") ?></h4>
+              <p class="text-muted"><?php the_field("title_3") ?></p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("twitter_3") ?>">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("facebook_3") ?>">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="<?php the_field("linkedin_3") ?>">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -380,7 +303,7 @@
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            <p class="large text-muted"><?php the_field("section_4_description") ?></p>
           </div>
         </div>
       </div>
@@ -392,8 +315,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading"><?php the_field("section_5_header") ?></h2>
+            <h3 class="section-subheading text-muted"><?php the_field("section_5_subheader") ?></h3>
           </div>
         </div>
         <div class="row">
@@ -423,7 +346,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button class="btn btn-xl" type="submit">Send Message</button>
+                  <button class="btn btn-xl" type="submit"><?php the_field("section_5_button_text") ?></button>
                 </div>
               </div>
             </form>
@@ -442,17 +365,17 @@
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="<?php the_field("twitter") ?>">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="<?php the_field("facebook") ?>">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="<?php the_field("linkedin") ?>">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
@@ -461,10 +384,10 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
+                <a href="<?php the_field("link_1") ?>"><?php the_field("link_1_name") ?></a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
+                <a href="<?php the_field("link_2") ?>"><?php the_field("link_2_name") ?></a>
               </li>
             </ul>
           </div>
