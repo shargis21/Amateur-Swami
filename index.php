@@ -12,9 +12,9 @@
     <title><?php the_field("site_title") ?></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
 
     <link href="<?php bloginfo('template_directory'); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="<?php bloginfo('template_directory'); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -22,10 +22,11 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet" type='text/css'> 
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet" type='text/css'>
 
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('template_directory'); ?>/css/agency.min.css" rel="stylesheet">
+
     <?php wp_head(); ?>
   </head>
 
