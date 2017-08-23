@@ -16,7 +16,7 @@
     <link href="<?php bloginfo('template_directory'); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts -->
     <link href="<?php bloginfo('template_directory'); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -24,7 +24,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet" type='text/css'>
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles -->
     <link href="<?php bloginfo('template_directory'); ?>/css/agency.min.css" rel="stylesheet">
 
     <?php wp_head(); ?>
@@ -220,7 +220,7 @@
       </div>
     </section>
 
-    <!-- Team -->
+    <!-- Section 4 -->
     <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
@@ -312,7 +312,7 @@
     </section>
 
 
-    <!-- Contact -->
+    <!-- Section 5 -->
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -413,14 +413,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2><?php the_field("modal_1_project_name") ?></h2>
+                  <p class="item-intro text-muted"><?php the_field("modal_1_project_subhead") ?></p>
                   <img class="img-fluid d-block mx-auto" src="<?php bloginfo('template_directory'); ?>/img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p><?php the_field("modal_1_project_description") ?></p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
+                    <li><?php the_field("modal_1_date") ?></li>
+                    <li><?php the_field("modal_1_client") ?></li>
+                    <li><?php the_field("modal_1_category") ?></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -447,14 +447,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2><?php the_field("modal_2_project_name") ?></h2>
+                  <p class="item-intro text-muted"><?php the_field("modal_2_project_subhead") ?></p>
                   <img class="img-fluid d-block mx-auto" src="<?php bloginfo('template_directory'); ?>/img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p><?php the_field("modal_2_project_description") ?></p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
+                    <li><?php the_field("modal_2_date") ?></li>
+                    <li><?php the_field("modal_2_client") ?></li>
+                    <li><?php the_field("modal_2_category") ?></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -481,14 +481,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2><?php the_field("modal_3_project_name") ?></h2>
+                  <p class="item-intro text-muted"><?php the_field("modal_3_project_subhead") ?></p>
                   <img class="img-fluid d-block mx-auto" src="<?php bloginfo('template_directory'); ?>/img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p><?php the_field("modal_3_project_description") ?></p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
+                    <li><?php the_field("modal_3_date") ?></li>
+                    <li><?php the_field("modal_3_client") ?></li>
+                    <li><?php the_field("modal_3_category") ?></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -515,14 +515,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2><?php the_field("modal_4_project_name") ?></h2>
+                  <p class="item-intro text-muted"><?php the_field("modal_4_project_subhead") ?></p>
                   <img class="img-fluid d-block mx-auto" src="<?php bloginfo('template_directory'); ?>/img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p><?php the_field("modal_4_project_description") ?></p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
+                    <li><?php the_field("modal_4_date") ?></li>
+                    <li><?php the_field("modal_4_client") ?></li>
+                    <li><?php the_field("modal_4_category") ?></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -549,14 +549,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <h2><?php the_field("modal_5_project_name") ?></h2>
+                  <p class="item-intro text-muted"><?php the_field("modal_5_project_subhead") ?></p>
                   <img class="img-fluid d-block mx-auto" src="<?php bloginfo('template_directory'); ?>/img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <p><?php the_field("modal_5_project_description") ?></p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
+                    <li><?php the_field("modal_5_date") ?></li>
+                    <li><?php the_field("modal_5_client") ?></li>
+                    <li><?php the_field("modal_5_category") ?></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -583,14 +583,14 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="<?php bloginfo('template_directory'); ?>/img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2><?php the_field("modal_6_project_name") ?></h2>
+                  <p class="item-intro text-muted"><?php the_field("modal_6_project_subhead") ?></p>
+                  <img class="img-fluid d-block mx-auto" src="<?php bloginfo('template_directory'); ?>/img/portfolio/05-full.jpg" alt="">
+                  <p><?php the_field("modal_6_project_description") ?></p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
+                    <li><?php the_field("modal_6_date") ?></li>
+                    <li><?php the_field("modal_6_client") ?></li>
+                    <li><?php the_field("modal_6_category") ?></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
