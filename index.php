@@ -216,6 +216,11 @@
             <h2 class="section-heading"><?php the_field("section_3_header") ?></h2>
             <h3 class="section-subheading text-muted"><?php the_field("section_3_subheader") ?></h3>
           </div>
+      </div>
+        <div class="col-lg-12">
+              <div class="embed-container"><?php the_field('video-embed'); ?>
+            </div>
+          </div>
         </div>
       </div>
     </section>
