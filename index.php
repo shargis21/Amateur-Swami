@@ -215,14 +215,31 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading"><?php the_field("section_3_header") ?></h2>
             <h3 class="section-subheading text-muted"><?php the_field("section_3_subheader") ?></h3>
-          </div>
-      </div>
-        <div class="col-lg-12">
-              <div class="embed-container"><?php the_field('video-embed'); ?>
-            </div>
+              <div class="embed-container"><?php the_field('oembed'); ?>
+              <style>
+              	.embed-container {
+              		position: relative;
+              		padding-bottom: 56.25%;
+              		height: 0;
+              		overflow: hidden;
+              		max-width: 100%;
+              		height: auto;
+              	}
+
+              	.embed-container iframe,
+              	.embed-container object,
+              	.embed-container embed {
+              		position: absolute;
+              		top: 0;
+              		left: 0;
+              		width: 100%;
+              		height: 100%;
+              	}
+              </style>
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- Section 4 -->
