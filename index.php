@@ -24,8 +24,8 @@
     <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link href="<?php bloginfo('template_directory'); ?>/css/agency.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/css/agency.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/css/agency.min.css" rel="stylesheet">
 
     <?php wp_head(); ?>
   </head>
