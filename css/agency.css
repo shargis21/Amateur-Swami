@@ -6,7 +6,7 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #990096; }
+  color: #F42DFA; }
   a.active, a:active, a:focus, a:hover {
     color: #e502e1; }
 
@@ -39,11 +39,11 @@ section {
     padding: 150px 0; } }
 
 ::-moz-selection {
-  background: #990096;
+  background: #F42DFA;
   text-shadow: none; }
 
 ::selection {
-  background: #990096;
+  background: #F42DFA;
   text-shadow: none; }
 
 img::selection {
@@ -53,7 +53,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #990096; }
+  -webkit-tap-highlight-color: #F42DFA; }
 
 #mainNav {
   background-color: #222222; }
@@ -68,8 +68,8 @@ body {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   #mainNav .navbar-brand {
-    color: #fed136;
-    font-family: 'Freckle Face', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    color: #F42DFA;
+    font-family: 'Walter Turncoat', 'Helvetica Neue', Helvetica, Arial, cursive; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #fec503; }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -78,10 +78,10 @@ body {
     padding: 0.75em 0;
     letter-spacing: 1px;
     color: white;
-    font-family: 'Freckle Face', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #990096; }
+      color: #F42DFA; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -174,7 +174,7 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(254, 209, 54, 0.9); }
+      background: rgba(244, 45, 250, 0.9); }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -394,7 +394,7 @@ ul.social-buttons {
       background-color: #990096; }
 
 .text-primary {
-  color: #fed136 !important; }
+  color: #F42DFA !important; }
 
 .btn-primary {
   font-weight: 700;
@@ -442,8 +442,8 @@ ul.social-buttons {
   padding: 20px 40px;
   border-radius: 3px;
   color: white;
-  border-color: #fed136;
-  background-color: #fed136;
+  border-color: #F42DFA;
+  background-color: #F42DFA;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
   .btn-xl.focus, .btn-xl:focus {
