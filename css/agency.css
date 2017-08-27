@@ -39,11 +39,11 @@ section {
     padding: 150px 0; } }
 
 ::-moz-selection {
-  background: #F42DFA;
+  background: #F42DFA
   text-shadow: none; }
 
 ::selection {
-  background: #F42DFA;
+  background: #F42DFA; !important
   text-shadow: none; }
 
 img::selection {
